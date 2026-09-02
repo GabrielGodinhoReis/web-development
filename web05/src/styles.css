@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #2d3748;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    background-color: #ffffff;
+    color: #2d3748;
+    border: solid 1px #cbd5e0;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 8px;
+    max-width: 500px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2b6cb0;
+    font-size: large;
+    border-bottom: #3182ce dotted 2px;
+    padding-bottom: 5px;
+}
+
+header,
+footer {
+    background-color: #1a365d;
+    color: white;
+    padding: 15px;
+}
+
+#senha {
+    background-color: #ffffff;
+}
+
+.botao {
+    background-color: #3182ce;
+    width: auto;
+    min-width: 150px;
+    padding: 10px 20px;
+    border: solid 1px #2b6cb0;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #2b6cb0;
+}
+
+.janela {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 1200px;
+    border: solid 1px #cbd5e0;
+    border-radius: 8px;
+    margin: 0 auto 15px auto;
+    padding: 15px;
+}
+
+.paisagem {
+    display: inline-table;
+}
+
+.retrato {
+    display: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin: 5px;
+}
+
+@media screen and (orientation: portrait) {
+
+    .janela {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    input:not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+        width: 85%;
+        max-width: none;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: auto;
+        margin: 5px;
+    }
+
+    .botao {
+        width: 90%;
+    }
+
+    .paisagem {
+        display: none;
+    }
+
+    .retrato {
+        display: inline-table;
+    }
+}

@@ -1,0 +1,50 @@
+<h1>Doação de Sangue</h1>
+        <form class="janela">
+        nome: <input type="text" id="nome" placeholder="digite seu nome completo"
+        maxlength="100" required><br>             
+        email: <input type="email" id="email" placeholder="informe um email valido"
+        required > <br>
+        idade: <input type="number" id="idade" min="18" max="65" required> <br>
+        peso: <input type="number" id="peso" min="45" max="150" step="0.1" required> <br>   
+        data: <input type="date" id="data" required><br>
+        hora: <input type="time" id="hora" required><br>
+        senha: <input type="password" id="senha" required><br>
+        Tipo sanguineo:
+        <div class="paisagem">
+                <input type="radio" id="tipoAp" name="tipo">A+
+                <input type="radio" id="tipoAn" name="tipo">A-
+                <input type="radio" id="tipoBp" name="tipo">B+
+                <input type="radio" id="tipoBn" name="tipo">B-
+                <input type="radio" id="tipoABp" name="tipo">AB+
+                <input type="radio" id="tipoABn" name="tipo">AB-
+                <input type="radio" id="tipoOp" name="tipo">O+
+                <input type="radio" id="tipoOn" name="tipo">O-
+        </div>
+        <div class="retrato">
+                <Select id="tipo">
+                        <option>A+</option><option>A-</option>        
+                        <option>B+</option><option>B-</option>        
+                        <option>AB+</option><option>AB-</option>        
+                        <option>O+</option><option>O-</option>        
+                </Select>                
+        </div>
+        <br>
+        Condições:<br>
+        <input type="checkbox" id="cTatoo">Tatuagem ou pircing nos ultimos 2 meses<br>
+        <input type="checkbox" id="cBebiba">Ingeriu bebida alcoolica nas ultimas 12 horas<br>
+        <input type="checkbox" id="cGravida">Esta gravida<br>
+        <input type="checkbox" id="cIST">Tem alguma doença contagiosa<br>
+        <input type="checkbox" id="cUltimosSeis">Doou sangue nos ultimos 6 meses?<br>
+        <br><br>
+        telefone:<input type="tel" name="telefone" pattern="\([0-9]{2}\)\s?[0-9]{4,5}-[0-9]{4}" placeholder="(11) 98765-4321" required><br>
+        unidade:<select id="unidade">
+                    <option>Ipiranga</option>
+                    <option>Vila Mariana</option>
+                    <option>Mooca</option>
+                    <option>Vila Prudente</option>
+                </select><br>
+        obs: <textarea id="obs" rows="5" cols="50"></textarea><br>    
+        <div class="centro">
+                <button id="btn1" class="botao">Enviar</button>    
+        </div>            
+        </form>
