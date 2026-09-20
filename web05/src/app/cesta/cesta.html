@@ -1,0 +1,131 @@
+<div class="container mt-5">
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="fw-bold mb-0">Cesta de Compras</h1>
+
+    <span class="badge bg-primary fs-6">
+      {{ cesta.itens.length }} itens
+    </span>
+  </div>
+
+  <div
+    *ngFor="let item of cesta.itens; let i = index"
+    class="card mb-3"
+  >
+
+    <div class="card-body">
+
+      <div class="row align-items-center">
+
+        <!-- Número do item -->
+        <div class="col-md-1 text-center">
+          <span class="badge bg-secondary">
+            {{ i + 1 }}
+          </span>
+        </div>
+
+        <!-- Informações do produto -->
+        <div class="col-md-5">
+
+          <h5 class="card-title mb-2">
+            {{ item.produto }}
+          </h5>
+
+          <p class="card-text mb-1">
+            <strong>Preço unitário:</strong>
+            R$ {{ item.preco.toFixed(2) }}
+          </p>
+
+          <p class="card-text mb-1">
+            <strong>Quantidade:</strong>
+            {{ item.quantidade }}
+          </p>
+
+          <p class="card-text mb-0 text-muted">
+            Código do item: {{ i + 1 }}
+          </p>
+
+        </div>
+
+        <!-- Resumo -->
+        <div class="col-md-3 text-md-center mt-3 mt-md-0">
+
+          <small class="text-muted d-block">
+            Subtotal
+          </small>
+
+          <strong class="fs-5">
+            R$ {{ item.subtotal.toFixed(2) }}
+          </strong>
+
+        </div>
+
+        <!-- Ações -->
+        <div class="col-md-3 text-md-end mt-3 mt-md-0">
+
+          <button class="btn btn-outline-danger btn-sm me-2">
+            Remover
+          </button>
+
+          <button class="btn btn-outline-primary btn-sm">
+            Detalhes
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Resumo da cesta -->
+  <div class="card mt-4">
+
+    <div class="card-body">
+
+      <div class="row">
+
+        <div class="col-md-8">
+
+          <h4 class="fw-bold">
+            Resumo da compra
+          </h4>
+
+          <p class="mb-1">
+            Quantidade de produtos:
+            <strong>{{ cesta.itens.length }}</strong>
+          </p>
+
+          <p class="mb-0">
+            Total de unidades:
+            <strong>
+              {{ cesta.itens.length }}
+            </strong>
+          </p>
+
+        </div>
+
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+
+          <p class="mb-1 text-muted">
+            Total da cesta
+          </p>
+
+          <h3 class="text-success fw-bold">
+            R$ {{ cesta.total.toFixed(2) }}
+          </h3>
+
+          <button class="btn btn-success mt-2">
+            Finalizar Compra
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
