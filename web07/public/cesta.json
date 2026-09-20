@@ -1,0 +1,27 @@
+[
+  {
+    "produto": "Mochila Escolar",
+    "quantidade": 1,
+    "preco": 89.90
+  },
+  {
+    "produto": "Caderno Universitário",
+    "quantidade": 2,
+    "preco": 24.90
+  },
+  {
+    "produto": "Garrafa Térmica",
+    "quantidade": 1,
+    "preco": 59.90
+  },
+  {
+    "produto": "Fone de Ouvido",
+    "quantidade": 1,
+    "preco": 79.90
+  },
+  {
+    "produto": "Caneta Azul",
+    "quantidade": 5,
+    "preco": 2.50
+  }
+]

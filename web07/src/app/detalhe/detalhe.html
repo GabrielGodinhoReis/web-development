@@ -1,0 +1,36 @@
+<div class="container mt-5">
+
+  <div class="card">
+
+    <div class="card-body">
+
+      <h1 class="card-title">
+        {{ item.produto }}
+      </h1>
+
+      <hr>
+
+      <p class="card-text">
+        <strong>Preço:</strong>
+        R$ {{ item.preco.toFixed(2) }}
+      </p>
+
+      <p class="card-text">
+        <strong>Quantidade:</strong>
+        {{ item.quantidade }}
+      </p>
+
+      <p class="card-text">
+        <strong>Subtotal:</strong>
+        R$ {{ item.subtotal.toFixed(2) }}
+      </p>
+
+      <button class="btn btn-primary">
+        Adicionar à cesta
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
